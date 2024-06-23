@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:PAC_Man_Game_WPF_MOO_ICT"
         mc:Ignorable="d"
         Title="PAC Man Game WPF MOO ICT" Height="600" Width="800">
-    <Canvas Name="MyCanvas" KeyDown="CanvasKeyDown" Focusable="True" Background="Black" RenderTransformOrigin="0.516,0.552" HorizontalAlignment="Left" Width="800">
+    <Canvas Name="MyCanvas" KeyDown="CanvasKeyDown" Focusable="True" Background="Black" RenderTransformOrigin="0.23,0.368" HorizontalAlignment="Left" Width="800">
         <Label FontSize="20" Name="txtScore" Foreground="White" Content="Score: 0" />
 
         <!-- Pacman and Ghosts -->
-        <Rectangle Name="pacman" Width="50" Height="50" Fill="Yellow" Canvas.Left="167" Canvas.Top="185" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Rectangle Name="pacman" Width="50" Height="50" Fill="Yellow" Canvas.Left="80" Canvas.Top="160" HorizontalAlignment="Center" VerticalAlignment="Top" />
         <Rectangle Name="redGuy" Tag="ghost" Width="30" Height="30" Fill="Red" Canvas.Left="330" Canvas.Top="170" RenderTransformOrigin="0.567,0.512" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Rectangle Name="orangeGuy" Tag="ghost" Width="30" Height="30" Fill="Orange" Canvas.Left="455" Canvas.Top="210" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Rectangle Name="pinkGuy" Tag="ghost" Width="30" Height="30" Fill="Pink" Canvas.Left="330" Canvas.Top="210" />
@@ -44,20 +44,10 @@
         <!-- More walls can be added here for the actual map details -->
 
         <!-- Coins (sample layout) -->
-        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="120" Canvas.Top="120" />
-        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="185" Canvas.Top="155" />
+        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="180" Canvas.Top="180" RenderTransformOrigin="0.533,0.571" />
+        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="180" Canvas.Top="150" />
         <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="180" Canvas.Top="120" />
-        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="210" Canvas.Top="120" RenderTransformOrigin="0.5,0.5" >
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.447"/>
-                    <TranslateTransform X="0.003" Y="-0.702"/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="240" Canvas.Top="120" RenderTransformOrigin="0.5,0.5" >
+        <Rectangle Tag="coin" Height="10" Width="10" Fill="Gold" Canvas.Left="179" Canvas.Top="207" RenderTransformOrigin="0.5,0.5" >
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
